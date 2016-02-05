@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "clean": "rimraf build/*",
-    "build": "node_modules/webpack/bin/webpack.js --config ./webpack.config.js -progress -profile -colors",
+    "build": "node_modules/webpack/bin/webpack.js --config ./webpack.production.config.js -progress -profile -colors",
     "publish": "npm run clean && npm run build && node ./publish.js"
   },
   "repository": {
